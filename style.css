@@ -1,6 +1,10 @@
+/* começo do css da lista */
 .division-list{
     margin: 0;
     padding: 0;
+}
+hr{
+    background-color: #C92071;
 }
 .link-lsp{
     color: #C92071;
@@ -67,3 +71,4 @@
         scale: 100%;
     }
 }
+/* fim do css da lista */
