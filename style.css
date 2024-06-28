@@ -123,4 +123,75 @@ section{
     }
     /* fim da animaçoes da galeria */
 }
+@media (max-width:540px) {
+    section{
+        display: grid;
+        grid-template-columns: 300px;
+
+    }
+    .img-g{
+        height: 250px;
+        width: 300px;
+    }
+    .s-m{
+        scale: 90%;
+    }
+    #b1{
+        animation:arespon;
+        animation-timing-function: ease-in-out;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    #b2{
+        animation:arespon;
+        animation-timing-function: ease-in-out;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    #b3{
+        animation:arespon;
+        animation-timing-function: ease-in-out;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes arespon {
+        0%{
+            scale: 100%;
+            background-color: #C92071;
+            color: white
+        }
+        15%{
+            scale: 120%;
+            background-color: white;
+            color: #C92071
+        }
+        25%{
+            scale: 100%;
+            background-color: white;
+            color: #C92071
+        }
+        40%{
+            scale: 120%;
+            background-color: #C92071;
+            color: white;
+        }
+        55%{
+            scale: 100%;
+            background-color: #C92071;
+            color: white;
+        }
+        60%{
+            transform: rotateX(0);
+        }
+        80%{
+           transform: rotatez(-360deg);
+           scale: 100%;
+        }
+        100%{
+            scale: 100%;
+            transform: rotateX(0);
+        }  
+    }
+
+}
 /* fim da galeria */
