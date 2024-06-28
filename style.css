@@ -1,74 +1,126 @@
-/* começo do css da lista */
-.division-list{
-    margin: 0;
-    padding: 0;
+/* começo do css da galeria */
+body{
+    background-color: gray;
 }
-hr{
-    background-color: #C92071;
-}
-.link-lsp{
-    color: #C92071;
-    float: right;
-    margin-right: 30px;
-    font-size: 24px;
-}
-.product-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,300px 300px 300px 300px);
-    gap: 20px;
-    list-style: none;
-    justify-content: center;
-    align-content: center;
-    padding-top: 50px;
-}
-.produtos-da-lista{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    justify-content: center;
-}
-.img-list-product{
-    width: 300px;
+.img-g{
+    width: 400px;
     height: 300px;
-    box-shadow: 4px 4px 10px gray;
 }
-.bcompra{
-    padding: 8px;
-    border: 3px solid;
-    border-color: #C92071;
+section{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titul-div{
+    justify-content: center;
+    display: flex;
+}
+.g-titulo{
+    font-size: 28px;
+    padding: 0;
     color: #C92071;
-    margin-top: 10px;
-    width: 140px;
-    font-size: 22px;
-    border-radius: 40px;
-    box-shadow: 4px 4px 10px gray;
-    transition: ease-in-out 0.1s;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    font-weight: bold;
 }
-.bcompra:active{
+.div-sm{
+    justify-content: center;
+    display: flex;
+}
+.s-m{
+    padding: 8px;
+    width: 150px;
+    border-radius: 30px;
+    border: solid, 2px;
     background-color: #C92071;
     color: white;
 }
-.bcompra:hover{
-    animation: me-compre;
-    animation-duration: 1s;
+/* animações da galeria */
+#b1{
+    animation: clickeme1;
     animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
-@keyframes me-compre{
+#b2{
+    animation: clickeme2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+#b3{
+    animation: clickeme3;
+    animation-timing-function: ease-in-out;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes clickeme1{
     0%{
         scale: 100%;
     }
-    25%{
-        scale: 120%;
+    10%{
+        scale: 130%;
     }
-    50%{
+    20%{
         scale: 100%;
     }
-    75%{
-        scale: 120%;
+    70%{
+        scale: 100%;
+    }
+    80%{
+        scale: 130%;
     }
     100%{
         scale: 100%;
     }
 }
-/* fim do css da lista */
+@keyframes clickeme2{
+    0%{
+        scale: 100%;
+    }
+    20%{
+        scale: 100%;
+    }
+    30%{
+        scale: 130%;
+    }
+    40%{
+        scale: 100%;
+    }
+    70%{
+        scale: 100%;
+    }
+    80%{
+        scale: 130%;
+    }
+    100%{
+        scale: 100%;
+    }
+}
+@keyframes clickeme3{
+    0%{
+        scale: 100%;
+    }
+    40%{
+        scale: 100%;
+    }
+    50%{
+        scale: 130%;
+    }
+    60%{
+        scale: 100px;
+    }
+    70%{
+        scale: 100%;
+    }
+    80%{
+        scale: 130%;
+    }
+    100%{
+        scale: 100%;
+    }
+    /* fim da animaçoes da galeria */
+}
+/* fim da galeria */
